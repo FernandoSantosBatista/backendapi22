@@ -10,7 +10,7 @@ const dogs_1 = __importDefault(require("./dogs"));
 const client_1 = __importDefault(require("./client"));
 const routes = (0, express_1.Router)();
 const prefixRoutes = '/api/v1';
-routes.get('/', (request, response) => response.json({ message: 'Hello Code83' }));
+routes.get('/', (request, response) => response.json({ message: 'Hello Code' }));
 routes.use(`${prefixRoutes}/login`, session_1.default);
 routes.use(`${prefixRoutes}/users`, user_1.default);
 routes.use(`${prefixRoutes}/dogs`, dogs_1.default);
