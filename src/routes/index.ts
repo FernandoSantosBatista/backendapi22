@@ -8,7 +8,7 @@ const routes = Router();
 const prefixRoutes = '/api/v1';
 
 routes.get('/', (request, response) =>
-  response.json({ message: 'Hello Code' }),
+  response.json({ message: 'Hello Word' }),
 );
 
 routes.use(`${prefixRoutes}/login`, sessionRoutes);
